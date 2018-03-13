@@ -1,1 +1,13 @@
-./idea
+# Intellij
+.idea/
+.DS_Store
+
+# Cached
+__pycache__
+
+# Virtuealenvironmen
+venv/
+
+# out/inputs
+out/
+data/
