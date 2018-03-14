@@ -5,7 +5,7 @@
 # Cached
 __pycache__
 
-# Virtuealenvironmen
+# Virtuealenvironment
 venv/
 
 # out/inputs

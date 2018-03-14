@@ -1,4 +1,7 @@
-import pandas as pd
+from math import sqrt
+
+from sklearn.metrics import mean_squared_error as mse
+
 import car_pricing.commons.helper as helper
 import car_pricing.commons.models as models
 
@@ -24,6 +27,10 @@ class LinearRegression:
         train_y_scaled, y_scaler = helper.scale(train_y)
         test_y_scaled, _ = helper.scale(test_y, y_scaler)
 
-        mse = models.linear_regression(train_x_scaled, train_y_scaled, test_x_scaled, test_y_scaled, None, True)
+        predictions, lr = models.linear_regression(train_x_scaled, train_y_scaled, test_x_scaled, test_y_scaled, scaler=y_scaler,
+                                       lr=None, test_mode=False)
 
-        print(mse)
+        predictions = helper.rescale_outliers(predictions.flatten(), min(train_y), max(train_y))
+        rmse = sqrt(mse(test_y, predictions))
+
+        return rmse
