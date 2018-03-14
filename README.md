@@ -50,7 +50,7 @@ Predictors are chosen from best performers on:
  * Regressor value built on the other features in the feature space
  * k-Nearest Neighbor determined by the other features in the feature space
  
-Best performers are determined by 11-fold cross validation on part of feature space not containing NaN values. 
+Best performers are determined by minimising RMSE on 11-fold cross validation on part of feature space not containing NaN values. 
  
 When the feature space no longer contain NaN values, two seperate models are built with 'ObjectPrice' as the dependent variable: 
  * Linear Regression model
