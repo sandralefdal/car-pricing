@@ -45,7 +45,9 @@ python car_pricing/build.py {input_file_path}
 
 to perform feature engineering if necessary and build two models;
  * Linear Regression model
- * Ada boost model
+ * Ada boost model (Average of kNN, LinearRegression and Regression Decision Tree)
+ 
+
 Average RMSE of 10 built models of each model is printed to standard out
 Feature engineering performed is also printed to standard out
 
