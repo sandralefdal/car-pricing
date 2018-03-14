@@ -4,7 +4,7 @@ Project to predict car prices.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
@@ -16,7 +16,7 @@ python --version
 
 ### Installing
 
-First, you should create a virtualenvironment to install required dependencies in
+First, you should create a virtualenvironment to install required dependencies.
 
 To create a virtualenvironment with name {name_of_env}, make sure you have virtualenv installed, and run:
 
@@ -29,8 +29,10 @@ Now, activate the virtual environment
 ```
 source {name_of_env}/bin/activate
 ```
+Make sure you are in the car-pricing directory, otherwise cd into it.
 
-And install the necessary dependencies
+
+Install the necessary dependencies
 ```
 pip install -r requirements.txt
 ```
