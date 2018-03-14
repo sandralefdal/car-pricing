@@ -54,7 +54,7 @@ Best performers are determined by minimising RMSE on 11-fold cross validation on
  
 When the feature space no longer contain NaN values, two seperate models are built with 'ObjectPrice' as the dependent variable: 
  * Linear Regression model
- * Ada boost model (Average of weak learnerd kNN, LinearRegression and Regression Decision Tree)
+ * Ada boost model (Average of weak learners kNN, LinearRegression and Regression Decision Tree)
 
 Average RMSE of each model is printed to standard out (Each model is built ten times, and the average RMSE of the ten models is reported)
 
