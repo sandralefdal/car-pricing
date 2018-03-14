@@ -1,13 +1,15 @@
 import pandas as pd
 import numpy as np
 import os
+import sys
 
+sys.path.append(".")
 from car_pricing.feature_engineering.feature_engineer import FeatureEngineer
 from car_pricing.models.linear_regression import LinearRegression
 from car_pricing.models.ada_boost import AdaBoost
 
-inputfile = "data/caddy_jz.csv"
-feature_engineer_output = "out/df_fe.csv"
+inputfile = sys.argv[1]
+feature_engineer_output = "df_fe.csv"
 
 df = pd.read_csv(inputfile)
 
